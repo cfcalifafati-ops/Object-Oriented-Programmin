@@ -1,0 +1,18 @@
+# Requirements Specification
+
+## Functional Requirements (FRs)
+
+* **FR1 (User Authentication):** The system must allow users (Members, Librarians, and Administrators) to log in securely using their credentials.
+* **FR2 (Catalog Search):** Members can search for available books by title or author and check their current availability.
+* **FR3 (Borrowing Rule):** Members can borrow up to a maximum limit of 5 books concurrently.
+* **FR4 (Status Tracking):** Book availability status (`Available`, `Borrowed`, `Reserved`) must update automatically based on user actions.
+* **FR5 (Reservation Expiry):** Reserved books that are not collected must automatically expire after 3 days.
+* **FR6 (Catalog Management):** Librarians can manage book records by adding, updating, or removing entries from the system.
+
+---
+
+## Non-Functional Requirements (NFRs)
+
+* **NFR1 (Performance):** Transaction processing, such as searching, borrowing, or reserving books, must process within 2 seconds.
+* **NFR2 (Maintainability & OO Design):** The codebase must follow core Object-Oriented principles, including Encapsulation, Inheritance, and Polymorphism.
+* **NFR3 (Traceability):** All design artifacts (requirements, UML diagram, pseudocode) must directly align with the running software implementation and test cases.
