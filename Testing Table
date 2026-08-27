@@ -1,0 +1,16 @@
+
+---
+
+### File 4: GitHub Wiki Page 3 — `Testing Table`
+*(Create a Wiki page titled `Testing Table` and paste this content)*
+
+```markdown
+# Test Strategy & Case Results
+
+| Test ID | Requirement | Test Action | Expected Result | Pass/Fail Criteria |
+| :--- | :--- | :--- | :--- | :--- |
+| **TC01** | FR3 (Borrowing Limit) | Call `borrow_book()` 5 times on `Member`. | Books 1-5 return "Success: Borrowed...". | **Pass** if all 5 books append to internal list. |
+| **TC02** | FR3 (Borrowing Limit) | Call `borrow_book()` a 6th time. | Returns "Error: Borrowing limit reached (Max 5 books)." | **Pass** if 6th item is rejected. |
+| **TC03** | LO3 (Polymorphism) | Loop through list containing `Member` & `Librarian` calling `get_details()`. | Each class executes its specific overridden method output. | **Pass** if outputs match class-specific formats. |
+
+```
