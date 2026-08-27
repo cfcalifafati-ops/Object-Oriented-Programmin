@@ -1,0 +1,21 @@
+```mermaid
+classDiagram
+    class User {
+        #string _user_id
+        +string name
+        +get_details() string
+    }
+
+    class Member {
+        -list _borrowed_books
+        +borrow_book(book_title: string) string
+        +get_details() string
+    }
+
+    class Librarian {
+        -string _employee_id
+        +get_details() string
+    }
+
+    User <|-- Member : Inherits
+    User <|-- Librarian : Inherits
